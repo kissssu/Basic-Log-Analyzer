@@ -1,0 +1,31 @@
+# Sample Server Log File
+
+# Date/Time         | IP Address    | Port | Service | Action | Status | Details
+2024-12-28 07:48:02 | 192.168.1.0   | 80 | HTTP   | GET /index.html         | 200 OK 
+2024-12-28 07:48:03 | 10.0.0.1      | 80 | HTTP   | GET /images/logo.png    | 200 OK
+2024-12-28 07:48:05 | 192.168.1.0   | 80 | HTTP   | GET /about.php          | 404 Not Found
+2024-12-28 07:48:07 | 172.16.10.1   | 80 | HTTP   | POST /login             | 201 Created
+2024-12-28 07:48:09 | 192.168.1.0   | 80 | HTTP   | GET /styles.css         | 200 OK
+2024-12-28 07:48:11 | 10.0.0.1      | 80 | HTTP   | GET /favicon.ico        | 404 Not Found
+2024-12-28 07:48:12 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized
+2024-12-28 07:48:13 | 192.168.1.0   | 80 | HTTP   | POST /login             | 401 Unauthorized
+2024-12-28 07:48:15 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized
+2024-12-28 07:48:17 | 192.168.1.0   | 22 | SSH    | Login                   | 200 OK 
+2024-12-28 07:48:18 | 10.0.0.3      | 21 | FTP    | Login                   | 230 User logged in.
+2024-12-28 07:48:20 | 192.168.1.0   | 22 | SSH    | Login                   | 403 Permission denied 
+2024-12-28 07:48:21 | 10.0.0.4      | 21 | FTP    | Download /data/file.txt | 150 File status okay; about to open data connection.
+2024-12-28 07:48:22 | localhost     | -  | System | Daily Backup | 0 | Backup completed successfully.
+2024-12-28 07:48:23 | localhost     | -  | System | Cron Job | 0 | Executed task 'clean_temp_files'.
+2024-12-28 07:48:25 | localhost     | -  | System | Software Update | 0 | No updates found.
+2024-12-28 07:48:27 | localhost     | -  | System | Security Check | 0 | Security check passed.
+2024-12-28 07:48:12 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized
+2024-12-28 07:48:13 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:15 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:16 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:17 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:18 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:19 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:20 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:21 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:22 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
+2024-12-28 07:48:23 | 10.0.0.2      | 80 | HTTP   | POST /login             | 401 Unauthorized 
