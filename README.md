@@ -12,7 +12,7 @@ This is a basic log analyzer script designed to simulate the analysis of server 
 - ```log.txt```: A sample log file (replace with your actual log file).
 
 ## How to Use:
-
+ 
 1. Save the script as 
 - ```log_analyzer.sh```.
 2. Make the script executable: 
