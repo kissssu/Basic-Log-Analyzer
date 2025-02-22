@@ -78,3 +78,25 @@ What do you want to do next?
 Enter your choice: 1
 IP 10.0.0.2 banned. (This is a simulation.)
 ```
+
+## Updates
+
+This section details the recent updates and improvements made to the log analyzer script.
+
+### Version 1.1
+
+*   **Configurable Threshold:** The threshold for failed login attempts can now be specified using the `-t` command-line argument.  For example: `./log_analyzer.sh -t 5` sets the threshold to 5. The default threshold is 3.
+*   **Log File as Argument:** The log file name can be specified using the `-l` command-line argument. For example: `./log_analyzer.sh -l my_server.log`. The default log file is `log.txt`.
+*   **Clearer Output Formatting:** Improved output formatting using `printf` for better readability and consistent alignment.
+*   **Unique IP Count:** Displays the total number of unique suspicious IPs detected.
+*   **Basic Timestamp Filtering:** Added basic timestamp filtering using `-s` for start time and `-e` for end time. The format should be YYYY-MM-DD HH:MM:SS. Example: `./log_analyzer.sh -s "2024-01-01 00:00:00" -e "2024-01-02 00:00:00" -l my_server.log`
+*   **Basic Error Handling:** Implemented basic error handling for checking file existence and readability, and invalid user input.
+*   **"Last Seen" Timestamp:** When researching an IP, the timestamp of the last failed login attempt is now displayed.
+
+### Future Enhancements
+
+*   Progress indicator for large log files.
+*   Colorized output using ANSI escape codes.
+*   More robust timestamp filtering and handling of various log formats.
+*   Advanced analysis features (geolocation, threat intelligence integration).
+*   Detailed reporting.
